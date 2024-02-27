@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ArtifactApplication</string>
+    <string name="artifact" />
+    <string name="todo">TODO</string>
+    <string name="artifact_info" />
+</resources>
