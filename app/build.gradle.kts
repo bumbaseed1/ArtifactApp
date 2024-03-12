@@ -66,7 +66,11 @@ dependencies {
     // https://mvnrepository.com/artifact/com.github.jai-imageio/jai-imageio-core
     implementation("com.github.jai-imageio:jai-imageio-core:1.4.0")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
-        // Make sure to include other dependencies as needed
+    implementation("com.google.android.gms:strict-version-matcher-plugin:1.2.4")
+    runtimeOnly("com.google.android.material:material:1.11.0")
+
+
+    // Make sure to include other dependencies as needed
 
 
 

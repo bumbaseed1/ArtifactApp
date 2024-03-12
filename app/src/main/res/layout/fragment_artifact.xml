@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#939393">
+    android:background="@color/backgroundColor">
 
     <ImageView
         android:id="@+id/artifactImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription=" "
+        android:contentDescription=""
         android:src="@drawable/artifact"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,21 +20,27 @@
         app:layout_constraintVertical_bias="0.334"
         tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/artifactInfoTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:padding="16dp"
-        android:rotationX="2"
-        android:text="This is the Amphora pot, found in The World Museum."
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/artifactImageView"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/artifactInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:rotationX="2"
+            android:text="This is the Amphora pot, found in The World Museum."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            tools:ignore="HardcodedText" />
+    </ScrollView>
 
     <TextView
         android:id="@+id/artifactTitleTextView"
@@ -46,5 +52,14 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dark_mode_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="13dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
